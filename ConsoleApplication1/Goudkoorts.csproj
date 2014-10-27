@@ -49,6 +49,7 @@
     <Compile Include="Domain\KadeVakje.cs" />
     <Compile Include="Domain\Kar.cs" />
     <Compile Include="Domain\RailsVakje.cs" />
+    <Compile Include="Domain\Schip.cs" />
     <Compile Include="Domain\StartVakje.cs" />
     <Compile Include="Domain\Vakje.cs" />
     <Compile Include="Domain\WisselVakje.cs" />
