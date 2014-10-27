@@ -7,5 +7,7 @@ namespace ConsoleApplication1.Presentation
 {
     class InputView
     {
+        //test
+        ///test2
     }
 }
