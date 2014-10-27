@@ -31,6 +31,10 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -41,14 +45,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Domain\Bord.cs" />
+    <Compile Include="Domain\KadeVakje.cs" />
+    <Compile Include="Domain\Kar.cs" />
+    <Compile Include="Domain\RailsVakje.cs" />
+    <Compile Include="Domain\StartVakje.cs" />
+    <Compile Include="Domain\Vakje.cs" />
+    <Compile Include="Domain\WisselVakje.cs" />
+    <Compile Include="Presentation\InputView.cs" />
+    <Compile Include="Presentation\OutputView.cs" />
+    <Compile Include="Process\Controller.cs" />
+    <Compile Include="Process\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Domain\" />
-    <Folder Include="Presentation\" />
-    <Folder Include="Process\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
