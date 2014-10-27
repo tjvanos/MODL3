@@ -25,6 +25,60 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="887975b7-f20e-49a1-bff0-3d094da8fe65"
+            isDerived="false"
+            sourceEndRoleName="Vakje"
+            targetEndRoleName="Kar"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="f7d3a1aa-7ac4-426e-82c1-9027a11385f7"
+              LastKnownName="Kar"
+              LastKnownLocation="Modellen.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c782394a-b985-4033-bfd7-6fc9e44c4b76"
+                  name="Vakje"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="185ddaeb-f81d-4078-8083-e0870ef1ce23"
+                  name="Kar"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="562c6651-e2df-4d1a-80d9-faddd725b3fc"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="f7e83243-2533-4d4a-98b9-b0d22599e443"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="74725170-3beb-4201-b308-cea3a88b6a01"
@@ -179,6 +233,60 @@
               LastKnownLocation="Modellen.uml" />
           </generalization>
         </generalsInternal>
+        <targetEnds>
+          <association
+            Id="3f20489d-7b7e-4a69-8cd9-1c561bcc3c9b"
+            isDerived="false"
+            sourceEndRoleName="Kade"
+            targetEndRoleName="Boot"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="1e8c89a1-d883-4c41-a8bc-2c0fbb707882"
+              LastKnownName="Boot"
+              LastKnownLocation="Modellen.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2816c224-7bad-48d6-acb3-387d8017dfc7"
+                  name="Kade"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9739a605-fa4d-45c4-b10c-8a59beeab9d6"
+                  name="Boot"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="e8d2e251-c3a5-45be-8a48-b97a3d587a45"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="f4b3bc67-9c74-443c-8217-1a0cb73f8807"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="f8fbb4e9-681c-4e43-9e7c-ce0e797ffb68"

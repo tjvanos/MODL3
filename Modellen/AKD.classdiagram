@@ -18,6 +18,34 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="340b56bc-1545-48a9-bdd1-3360bc0ef826" name="Vakje" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="6d28dc79-89a5-4c2f-99ff-47fdcf4d03b8" />
+        <targetEnds>
+          <association Id="0253b305-cf9a-493d-aa4b-a6296baf0ab2" isDerived="false" sourceEndRoleName="Vakje" targetEndRoleName="Kar" isLeaf="false" isAbstract="false">
+            <classMoniker Id="28339e61-734e-4be7-b0ff-8d1c6b41aa4d" LastKnownName="Kar" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="081aa458-2a0d-4501-8a0b-3c84164d2dbe" name="Vakje" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c782394a-b985-4033-bfd7-6fc9e44c4b76" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6b28d820-ee21-4480-9dd9-b2bb53f506db" name="Kar" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="981aa5b4-f14b-41f1-ade1-07fbe479ed8f" name="Lower" value="0">
+                      <elementDefinition Id="562c6651-e2df-4d1a-80d9-faddd725b3fc" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="ca3f8ecd-4b91-4433-bb0f-8314a6932bdc" name="Upper" value="1">
+                      <elementDefinition Id="f7e83243-2533-4d4a-98b9-b0d22599e443" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="185ddaeb-f81d-4078-8083-e0870ef1ce23" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="887975b7-f20e-49a1-bff0-3d094da8fe65" />
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property Id="da30b798-d7c6-48fa-89c7-e83aa76c0482" name="Kar" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="74725170-3beb-4201-b308-cea3a88b6a01" />
@@ -94,6 +122,34 @@
             <elementDefinition Id="b15aad24-5be4-453f-b064-48b37b280ad3" />
           </generalization>
         </generalsInternal>
+        <targetEnds>
+          <association Id="757a87e7-9724-4005-ac99-a9125063bf28" isDerived="false" sourceEndRoleName="Kade" targetEndRoleName="Boot" isLeaf="false" isAbstract="false">
+            <classMoniker Id="de5cdcfe-f1a2-413b-81b1-baf45176ba6d" LastKnownName="Boot" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d150a756-f04d-41a1-b41c-273209a4afce" name="Kade" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2816c224-7bad-48d6-acb3-387d8017dfc7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f3edb107-f79d-4275-bbef-6b829cef59a6" name="Boot" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="fefbf93a-4a15-4401-a051-4f10bb2019ce" name="Lower" value="0">
+                      <elementDefinition Id="e8d2e251-c3a5-45be-8a48-b97a3d587a45" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="ae52f231-c920-46df-bf38-98b334503c9f" name="Upper" value="1">
+                      <elementDefinition Id="f4b3bc67-9c74-443c-8217-1a0cb73f8807" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="9739a605-fa4d-45c4-b10c-8a59beeab9d6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3f20489d-7b7e-4a69-8cd9-1c561bcc3c9b" />
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property Id="497b737b-b995-4492-800e-c1b775cc48f9" name="boot" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="f8fbb4e9-681c-4e43-9e7c-ce0e797ffb68" />
