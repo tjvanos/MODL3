@@ -29,7 +29,7 @@ namespace ConsoleApplication1.Presentation
                     doorgaan = false;
                 }
             }
-
+            Console.Clear();
             switch (k)
             {
                 case ConsoleKey.D1:

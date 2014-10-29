@@ -41,14 +41,15 @@ namespace ConsoleApplication1.Process
                 if (second)
                 {                    
                     running = true;
-                    addCartThread = new Thread(StartAddCartTimer);
-                    addCartThread.Start();
+                    
                     makeStep = new Thread(MakeStep);
                     makeStep.Start();
+                    addCartThread = new Thread(StartAddCartTimer);
+                    addCartThread.Start();
                     second = false;
-                    outputview.ShowGame();
+                    outputview.ShowGame(bord);
                 }
-                HanleSwitch();
+                HandleSwitch();
                
             }
 
@@ -56,28 +57,38 @@ namespace ConsoleApplication1.Process
             
         }
 
+        // Om een bepaalde tijd het spel een stap laten doen
         private void MakeStep()
         {
             while(running)
             {
                 Thread.Sleep(1000);
-                Console.WriteLine("Doe een stap");
+                bord.stap();
+                Console.Clear();
+                outputview.ShowGame(bord);
+                Console.WriteLine("refreshed");
             }
         }
 
+        // Om een bepaalde tijd een wagen toevoegen aan een random startstation
         public void StartAddCartTimer()
         {
             while(running)
             {
-                Thread.Sleep(4000);
+                Thread.Sleep(3100);
+                bord.addRandom();
+                //Console.Clear();
+                //outputview.ShowGame(bord);
                 Console.WriteLine("Voeg een Kar toe aan het bord");
+
             }            
         }
 
-        public void HanleSwitch()
+        //Afhandelen van de switch invoer.
+        public void HandleSwitch()
         {
             int valueSwith = inputview.AskSwitch();
-            outputview.ShowGame();
+            outputview.ShowGame(bord);
         }
     }
 }

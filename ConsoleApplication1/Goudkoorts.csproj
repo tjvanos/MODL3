@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Domain\Bord.cs" />
+    <Compile Include="Domain\Eindvakje.cs" />
     <Compile Include="Domain\KadeVakje.cs" />
     <Compile Include="Domain\Kar.cs" />
     <Compile Include="Domain\RailsVakje.cs" />

@@ -9,6 +9,7 @@ namespace ConsoleApplication1.Domain
     {
         public Vakje volgende;
 
+
         public Kar kar{
             get;
             set;
@@ -22,12 +23,35 @@ namespace ConsoleApplication1.Domain
         {
 
         }
-        public void Move()
+        public virtual void Move()
         {
-            this.volgende.kar = this.kar;
-            this.kar = null;
+            if(this.volgende != null)
+            { 
+                this.volgende.kar = this.kar;
+                this.kar = null;
+            }
         }
 
+        public virtual String getWaarde()
+        {
+            String output = "=[";
+            if (this.kar != null)
+            {
+                if (this.kar.hasPackage())
+                    output += "1";
+                else
+                    output += "0";
+            }
+            else
+            {
+                output += "-";
+            }
+            output += "]";
+            return output;
+        }
+
+       
+        
 
 
     }
