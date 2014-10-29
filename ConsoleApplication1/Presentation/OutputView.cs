@@ -7,6 +7,34 @@ namespace ConsoleApplication1.Presentation
 {
     class OutputView
     {
+
+        public void ShowGame()
+        {
+
+            Console.Clear();
+            Console.WriteLine("┌────────────────────────────────────────────────────┐");
+            Console.WriteLine("|44444444444444444444444444444444444444444444444444  |");
+            Console.WriteLine("|44444444444444444444444444444444444444444444444444  |");
+            Console.WriteLine("|44444444444444444444444444444444444444444444444444  |");
+            Console.WriteLine("|44444444444444444444444444444444444444444444444444  |");
+            Console.WriteLine("|44444444444444444444444444444444444444444444444444  |");
+            Console.WriteLine("|44444444444444444444444444444444444444444444444444  |");
+            Console.WriteLine("|44444444444444444444444444444444444444444444444444  |");
+            Console.WriteLine("|44444444444444444444444444444444444444444444444444  |");
+            Console.WriteLine("|44444444444444444444444444444444444444444444444444  |");
+            Console.WriteLine("|44444444444444444444444444444444444444444444444444  |");
+            Console.WriteLine("|44444444444444444444444444444444444444444444444444  |");
+            Console.WriteLine("|44444444444444444444444444444444444444444444444444  |");
+            Console.WriteLine("|44444444444444444444444444444444444444444444444444  |");
+            Console.WriteLine("|44444444444444444444444444444444444444444444444444  |");
+            Console.WriteLine("|44444444444444444444444444444444444444444444444444  |");
+            Console.WriteLine("|44444444444444444444444444444444444444444444444444  |");
+            Console.WriteLine("|44444444444444444444444444444444444444444444444444  |");
+            Console.WriteLine("|44444444444444444444444444444444444444444444444444  |");
+            Console.WriteLine("└────────────────────────────────────────────────────┘");
+        }
+
+
         public void ShowGameStart()
         {
             Console.Clear();
@@ -34,6 +62,15 @@ namespace ConsoleApplication1.Presentation
             Console.WriteLine("Druk op enter om het spel te starten.");
 
             Console.WriteLine("");
+            Console.ReadKey();
         }
+
+        public void GameEnd()
+        {
+            Console.Clear();
+            Console.WriteLine("Waiting for input");
+            Console.ReadKey();
+        }
+
     }
 }
