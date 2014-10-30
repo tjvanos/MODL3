@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
+  dslVersion="1.0.0.0"
+  Id="f51c4702-f8b6-41a9-b89f-70d8b8e17800"
+  name="Controller" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="27b1db14-70f0-45ff-9d12-7d48045892ef"
+        name="Controller"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="f2cc7ecf-b449-4268-91dd-66c4a768b59e">
+            <packageMoniker
+              Id="f8d11a7b-3d83-4b27-af92-74d7b5a440b3"
+              LastKnownName="View"
+              LastKnownLocation="Package_2128.uml" />
+          </dependency>
+          <dependency
+            Id="7b58ae9e-b8b4-4f65-8438-51474bdce11e">
+            <packageMoniker
+              Id="9f770f23-4dae-4aac-96f6-95f14857ce67"
+              LastKnownName="Model"
+              LastKnownLocation="Package1_2129.uml" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="f000b894-9847-4bb9-a620-cc5d007c83a4"
+        name="Program"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="5d0508bc-8a7e-4c43-bf21-6bb7acbba652">
+            <classMoniker
+              Id="27b1db14-70f0-45ff-9d12-7d48045892ef"
+              LastKnownName="Controller"
+              LastKnownLocation="Package_2129.uml" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

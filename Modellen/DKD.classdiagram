@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="27014464-5e02-4a42-8421-c400d217fe6c" name="UMLClassDiagram1" linkedPackageId="774730a2-1771-459f-950d-cf7307381875" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <ownedCommentsInternal>
+    <comment Id="4a444575-cd59-47a0-8ddf-1f71ca9d95e9">
+      <elementDefinition Id="76810c30-d004-487a-80ac-8aa4a2205e82" />
+      <body>user Starts Program</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="5e44021c-3689-40c3-b353-a4d67564467b">
+      <profileInstance Id="1cd8384b-2650-44de-9056-7770104236b6" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="8214ed6b-23bd-4363-9dfe-d09ca09db83e">
+      <profileInstance Id="cb0cba25-2753-49dd-893b-39515e444d9b" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="b5e8214b-aa46-4c8c-abc5-b96ca01ff153" name="View">
+        <elementDefinition Id="f8d11a7b-3d83-4b27-af92-74d7b5a440b3" />
+        <suppliersInternal>
+          <dependency Id="a7002555-f99f-4fbc-a4eb-38583493063a">
+            <classMoniker Id="6c564d70-eca7-470b-a4b3-aaeb819c6e1c" LastKnownName="Controller" />
+            <elementDefinition Id="3f00f318-502c-4628-b732-92035194d5bb" />
+          </dependency>
+        </suppliersInternal>
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="d485ce87-4b4c-4626-a7e1-2d093a38b137" name="OutputView" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="f2476ca1-17d1-48a0-8065-0356ae3a0152" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="db8e5356-2ad9-4b3f-b2fd-10b1b9a9f457" name="InputView" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="8fc4fc72-3f46-446a-9660-787a8e11c229" />
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="45187124-9466-4e73-94b2-5aebfdb67f6d" name="Controller">
+        <elementDefinition Id="f51c4702-f8b6-41a9-b89f-70d8b8e17800" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="6c564d70-eca7-470b-a4b3-aaeb819c6e1c" name="Controller" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="27b1db14-70f0-45ff-9d12-7d48045892ef" />
+              <suppliersInternal>
+                <dependency Id="1aa3c612-9278-4a5c-9f8c-5f1f1121f58f">
+                  <packageMoniker Id="b5e8214b-aa46-4c8c-abc5-b96ca01ff153" LastKnownName="View" />
+                  <elementDefinition Id="f2cc7ecf-b449-4268-91dd-66c4a768b59e" />
+                </dependency>
+                <dependency Id="0297fc6a-6901-4b31-bc80-f88f6d2bf726">
+                  <packageMoniker Id="b3224c29-efa0-4e7f-87fe-84b64021d375" LastKnownName="Model" />
+                  <elementDefinition Id="7b58ae9e-b8b4-4f65-8438-51474bdce11e" />
+                </dependency>
+              </suppliersInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="aa89e14a-235f-4fd6-9a1f-7f479620dbde" name="Program" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="f000b894-9847-4bb9-a620-cc5d007c83a4" />
+              <suppliersInternal>
+                <dependency Id="4134c089-fc76-44eb-b4d7-34b951096d66">
+                  <classMoniker Id="6c564d70-eca7-470b-a4b3-aaeb819c6e1c" LastKnownName="Controller" />
+                  <elementDefinition Id="5d0508bc-8a7e-4c43-bf21-6bb7acbba652" />
+                </dependency>
+              </suppliersInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="b3224c29-efa0-4e7f-87fe-84b64021d375" name="Model">
+        <elementDefinition Id="9f770f23-4dae-4aac-96f6-95f14857ce67" />
+        <suppliersInternal>
+          <dependency Id="228fdd79-c41c-455f-965e-4313d29d3d7e">
+            <classMoniker Id="6c564d70-eca7-470b-a4b3-aaeb819c6e1c" LastKnownName="Controller" />
+            <elementDefinition Id="41379232-1add-4030-9f58-d81959a9e5fc" />
+          </dependency>
+        </suppliersInternal>
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="c70dd61f-8751-427a-a296-5657f48eaf0b" name="Bord" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="e25fbc5f-ca45-45ca-9572-72dae1723332" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="3e4932a1-1b99-4dea-99de-11c5fc2de945" name="Vakje" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="9328e028-1620-4539-acb3-de370a20153e" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="21e48dc6-9b76-4a9d-aac6-e8474d64a9ce" name="StartVakje" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="6bad4a54-fb57-4215-95d2-13e9730e47fa" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="e633a5ad-95d5-4aa0-8efb-521fee6e7c68" name="EindVakje" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="3081c4d5-b03c-4a7c-8691-29a2b1b7a2d9" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="59580b8a-a924-4f98-a561-c1b573d11a99" name="RailsVakje" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="aa239a24-ab41-4fa9-b741-ba60277f2d42" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="ed366af5-23db-4848-a9da-e0d37e004e01" name="WisselVakje" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="34f4bf08-46ce-44ab-b39b-55757fe9f0e1" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="8b01205e-630e-4017-8029-3f9664ec72f6" name="KadeVakje" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="f2d3bc5c-fe96-46e8-bb0f-be6f41a5936f" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="ca0bdc56-a32e-41bb-997d-89692dda5996" name="Schip" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="e36c951f-9447-4ad7-a70f-b7406f2be096" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="83ad5762-9a5b-4161-9918-7dfd8ed5d700" name="Kar" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="52885b2d-0611-43af-b453-13a08618db05" />
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+  </packagedElements>
+  <package Id="774730a2-1771-459f-950d-cf7307381875" name="Modellen">
+    <elementDefinition Id="d99d8302-6c37-43b7-b4d5-4a1dba44e50c" />
+  </package>
+</logicalClassDesignerModel>

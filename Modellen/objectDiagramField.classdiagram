@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="ae61c76f-1624-4150-ba95-e878c1313037" name="objectDiagramField" linkedPackageId="c458a94f-c725-4b27-8d6c-c01d6b96f893" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <ownedCommentsInternal>
+    <comment Id="e06457b3-8bb8-4960-a4e8-f79c355d7e64">
+      <elementDefinition Id="a9b30e2e-286e-4417-bb33-6745a578e6b5" />
+      <body>Linked list met de bijbehorende links!
+</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c507b2ad-6bdb-4f81-993d-f6683222d344" name="vak13 : Eindvakje" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8fb6e7ea-9583-4bb7-ace5-81cbd027d30e" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="4b29de7d-0c2e-432b-953d-f8c509f4f9db" name="vak12 : RailsVakje" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="183a3f26-ccea-44ac-b407-a6332f2410f4" />
+        <suppliersInternal>
+          <dependency Id="319f0665-0705-45c0-b7e3-96cfc6e58c5b">
+            <classMoniker Id="c507b2ad-6bdb-4f81-993d-f6683222d344" LastKnownName="vak13 : Eindvakje" />
+            <elementDefinition Id="fac80414-f2fc-4846-80e3-e2efabd6cd44" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="8145563d-81b6-4e36-8c98-ed4592acc02e" name="vak11 : KadeVakje" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b2ff9e70-972e-4110-8e36-443c25d5af54" />
+        <suppliersInternal>
+          <dependency Id="0dd183d2-2905-46b8-8f6f-b0ca8a50efd4">
+            <classMoniker Id="4b29de7d-0c2e-432b-953d-f8c509f4f9db" LastKnownName="vak12 : RailsVakje" />
+            <elementDefinition Id="b26cfb98-7adc-4fd1-85b0-7c79fcc1e856" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="281d6465-3396-4e56-ac9f-4d19f7ea0293" name="vak10 : RailsVakje" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3b119fd8-b92a-47a6-80d4-7cf334edaca6" />
+        <suppliersInternal>
+          <dependency Id="b941b212-3428-4e99-a35e-47617600a55c">
+            <classMoniker Id="8145563d-81b6-4e36-8c98-ed4592acc02e" LastKnownName="vak11 : KadeVakje" />
+            <elementDefinition Id="7eec6079-40e3-4a21-85bb-48d60b9c76b3" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="fe2d9c0e-f60b-48be-923c-15695dff9a6f" name="vak9 : WisselVakje" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f66c46e1-cd37-4c8e-9e9e-cb7dc4781a0a" />
+        <suppliersInternal>
+          <dependency Id="50f1a321-529a-435f-9699-08b55cca7921">
+            <classMoniker Id="281d6465-3396-4e56-ac9f-4d19f7ea0293" LastKnownName="vak10 : RailsVakje" />
+            <elementDefinition Id="f7dc7a4e-0bd8-40f8-86a5-a080b005f5e3" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="4488ba81-cfcf-477d-8df0-dfda6f35c4e7" name="vak8 : RailsVakje" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d9be1d62-602c-46c6-91cd-b255cfdcfa0c" />
+        <suppliersInternal>
+          <dependency Id="e22b19a3-5891-45a8-b211-f0036cdf9c28">
+            <classMoniker Id="fe2d9c0e-f60b-48be-923c-15695dff9a6f" LastKnownName="vak9 : WisselVakje" />
+            <elementDefinition Id="1214d3f8-e574-466d-a075-be597f11f3f0" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="47180a34-0ea5-4a3f-825c-3c49ae7c3b1d" name="vak7 : WisselVakje" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="82b4c88a-d12d-45a9-8e06-e10fc7ed56db" />
+        <suppliersInternal>
+          <dependency Id="502cddbb-d7ce-4b3e-ae12-0edca9e8f6f5">
+            <classMoniker Id="4488ba81-cfcf-477d-8df0-dfda6f35c4e7" LastKnownName="vak8 : RailsVakje" />
+            <elementDefinition Id="37fafc3c-6cf9-47a8-ba1a-74e9c8aa6eaf" />
+          </dependency>
+          <dependency Id="77b4ffd8-18ad-498f-9813-954a29fe6775">
+            <classMoniker Id="d6cfa184-f150-4f73-bcd2-20e6c5821ac8" LastKnownName="vak15 : RailsVakje" />
+            <elementDefinition Id="4711f5c4-75a8-4b44-a357-caf89159c0a9" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e3b59266-3210-47ab-a2e0-987af379d2f0" name="vak6 : RailsVakje" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4e74f341-7dbe-4463-91b6-9178e2ae15fc" />
+        <suppliersInternal>
+          <dependency Id="a7f78f0c-ebd7-4e09-9b81-3bb0322997d8">
+            <classMoniker Id="47180a34-0ea5-4a3f-825c-3c49ae7c3b1d" LastKnownName="vak7 : WisselVakje" />
+            <elementDefinition Id="e3242b1e-530c-4653-becb-1c5de6998e42" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ae659eb1-bf10-4d2e-8e5f-a200c535bbf9" name="vak5 : WisselVakje" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="935cc23e-6ea8-49c5-b2a5-0c40e0c65723" />
+        <suppliersInternal>
+          <dependency Id="af9cd321-f342-4123-aae4-7495238f9c7d">
+            <classMoniker Id="e3b59266-3210-47ab-a2e0-987af379d2f0" LastKnownName="vak6 : RailsVakje" />
+            <elementDefinition Id="51f7ab7f-d268-4416-96dc-5ed242b4d09a" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="33e9c5b2-1568-475c-9edf-6b9c43df4c9a" name="vak4 : RailsVakje" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="05ebf1dc-6059-4e82-9cdb-33c319d1434d" />
+        <suppliersInternal>
+          <dependency Id="84e558b2-e951-40f4-9e4b-d5471db09a3f">
+            <classMoniker Id="ae659eb1-bf10-4d2e-8e5f-a200c535bbf9" LastKnownName="vak5 : WisselVakje" />
+            <elementDefinition Id="2934a1f4-0ef2-4a4f-a31d-036a3b652fe0" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6f34fbb6-91ef-498f-80d7-7bb3e9840cf5" name="vak1 : StartVakje" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0efebd7a-4275-4ce4-b358-60e1edb6b0d7" />
+        <suppliersInternal>
+          <dependency Id="c9fa7cd3-1bb1-4eab-be9f-2cc4ab3d8dfd">
+            <classMoniker Id="33e9c5b2-1568-475c-9edf-6b9c43df4c9a" LastKnownName="vak4 : RailsVakje" />
+            <elementDefinition Id="1cdb5fbc-4268-4e82-bb2b-cba956f4e32b" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="849d8b0a-4db3-44fd-bcb0-2881b937a722" name="vak14 : RailsVakje" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="81b3bd6c-7f46-4db9-8147-2b3a72b38b39" />
+        <suppliersInternal>
+          <dependency Id="f4b5f85d-865a-40a4-8abd-128c94f750f4">
+            <classMoniker Id="ae659eb1-bf10-4d2e-8e5f-a200c535bbf9" LastKnownName="vak5 : WisselVakje" />
+            <elementDefinition Id="a0ed3719-f9b6-455e-b759-e98d8a594b89" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="296fabf6-b061-49c4-90c4-6dcfe5b64cc9" name="vak2 : StartVakje" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="969a6f68-f17f-45f7-97c6-e925d0891fff" />
+        <suppliersInternal>
+          <dependency Id="10e6a46f-e88e-4990-a046-9991c46e4340">
+            <classMoniker Id="849d8b0a-4db3-44fd-bcb0-2881b937a722" LastKnownName="vak14 : RailsVakje" />
+            <elementDefinition Id="c7a5c60c-d269-4a13-8a7b-7ffc04294da4" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d6cfa184-f150-4f73-bcd2-20e6c5821ac8" name="vak15 : RailsVakje" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="dec678ee-f487-49a4-9737-7f344f6d16bc" />
+        <suppliersInternal>
+          <dependency Id="0d13aed2-ab59-4f3f-8f10-ee7cd0c2266e">
+            <classMoniker Id="be99be7b-47f1-4b9e-9404-d424b9a84c44" LastKnownName="vak16 : WisselVakje" />
+            <elementDefinition Id="2f7da8f2-e7b7-45dc-8c32-8b9ce88261cb" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="be99be7b-47f1-4b9e-9404-d424b9a84c44" name="vak16 : WisselVakje" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c062e935-b4c1-45c2-bf0b-9633304ad850" />
+        <suppliersInternal>
+          <dependency Id="7b415b59-af23-466a-8679-cc383d92f541">
+            <classMoniker Id="4c0efcfd-bb42-4ba6-bc14-b8f54a5cbbde" LastKnownName="vak17 : RailsVakje" />
+            <elementDefinition Id="1857d4f5-1bdc-494d-83ea-20e4ad4c20d0" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a2ce8c53-eb5a-4abf-baf8-4f02dda12ffb" name="vak23 : RailsVakje" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="727a2fb2-b0c0-4eba-92d0-cf9b33c50372" />
+        <suppliersInternal>
+          <dependency Id="af8dbba0-431f-456b-9f68-fcb1e9e647a3">
+            <classMoniker Id="be99be7b-47f1-4b9e-9404-d424b9a84c44" LastKnownName="vak16 : WisselVakje" />
+            <elementDefinition Id="4a6090a3-53cf-4d5e-bdc7-e14dd56a7542" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="505d92a1-22b9-4418-9f59-936850b49c07" name="vak3 : StartVakje1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5f6cc690-98a4-435f-a80a-e9e610771f29" />
+        <suppliersInternal>
+          <dependency Id="b63f8c5b-b889-49b7-87de-7e5478d7d6ec">
+            <classMoniker Id="a2ce8c53-eb5a-4abf-baf8-4f02dda12ffb" LastKnownName="vak23 : RailsVakje" />
+            <elementDefinition Id="f0e22310-4d8e-45e3-a954-9398ac94fd03" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="4c0efcfd-bb42-4ba6-bc14-b8f54a5cbbde" name="vak17 : RailsVakje" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="31056ebd-984f-4b78-8b5c-386c97b66424" />
+        <suppliersInternal>
+          <dependency Id="36431c74-5b2c-450c-8eff-d32e8fd76577">
+            <classMoniker Id="cc0ebcbb-92c9-431c-b4b3-4430e49024fe" LastKnownName="vak18 : WisselVakje" />
+            <elementDefinition Id="ca2440f3-2cbe-43d4-99ef-bf70cc84d18c" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="cc0ebcbb-92c9-431c-b4b3-4430e49024fe" name="vak18 : WisselVakje" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1faa7e8f-1ead-420a-a343-9261fbaca6a2" />
+        <suppliersInternal>
+          <dependency Id="0d2f168b-cf04-450d-bafc-6de157233286">
+            <classMoniker Id="fecfe58b-d109-40ab-a7a9-5308de4d7070" LastKnownName="vak24 : RailsVakje" />
+            <elementDefinition Id="d3e27a92-b58d-4473-a793-2bca0d6615aa" />
+          </dependency>
+          <dependency Id="e7b5cacd-9566-432e-94c7-7d8e1a2ef676">
+            <classMoniker Id="5189c7fb-db77-4f18-ae89-143419841737" LastKnownName="vak19 : RailsVakje" />
+            <elementDefinition Id="910f079a-4a00-4057-8aee-b315926e3716" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="fecfe58b-d109-40ab-a7a9-5308de4d7070" name="vak24 : RailsVakje" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e1ee6c0d-a5e4-4d4e-b756-aa7ea5671045" />
+        <suppliersInternal>
+          <dependency Id="c4a03866-f42e-43ce-b35b-ed3dbf41bae6">
+            <classMoniker Id="fe2d9c0e-f60b-48be-923c-15695dff9a6f" LastKnownName="vak9 : WisselVakje" />
+            <elementDefinition Id="5e8ac842-d874-41cc-8e05-8f8aaa57aa44" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5189c7fb-db77-4f18-ae89-143419841737" name="vak19 : RailsVakje" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="18020c76-40bb-4bd6-8529-36121556d754" />
+        <suppliersInternal>
+          <dependency Id="392c1db8-6243-4dcc-99ea-a923547c5dd5">
+            <classMoniker Id="c8e7ca43-f254-4126-944b-a4e322bdffe3" LastKnownName="vak20 : KadeVakje1" />
+            <elementDefinition Id="49571150-f4be-4bbf-bdfb-6eff2326666b" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c8e7ca43-f254-4126-944b-a4e322bdffe3" name="vak20 : KadeVakje1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6b53b831-bbbb-49a6-ab20-bf6eead9d30b" />
+        <suppliersInternal>
+          <dependency Id="a8c80a30-58d2-416b-8e75-1a011be0d7f2">
+            <classMoniker Id="3dc2a7d6-5ca9-4828-9bd8-5e60f0d89f8b" LastKnownName="vak17 : RailsVakje1" />
+            <elementDefinition Id="4be1b27e-066b-4128-b2ab-20d08f729ba0" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="3dc2a7d6-5ca9-4828-9bd8-5e60f0d89f8b" name="vak17 : RailsVakje1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7ed3ccf0-986a-4e92-af35-484a833a7df9" />
+        <suppliersInternal>
+          <dependency Id="039ad3fb-3d16-49b3-b08d-bb1ca5033f67">
+            <classMoniker Id="ba3318c7-63b4-4141-a10f-9a875f109fdd" LastKnownName="vak13 : Eindvakje1" />
+            <elementDefinition Id="8b76b1cc-4cc3-4677-a262-35af0e348eee" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ba3318c7-63b4-4141-a10f-9a875f109fdd" name="vak13 : Eindvakje1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ac0254a4-e12f-4b8f-a62c-9048053d2faa" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="c458a94f-c725-4b27-8d6c-c01d6b96f893" name="Modellen">
+    <elementDefinition Id="d99d8302-6c37-43b7-b4d5-4a1dba44e50c" />
+    <profileInstances>
+      <packageHasProfileInstances Id="8f622f9e-fd9c-47b4-a50c-e07b5d76b265">
+        <profileInstance Id="9b746d16-9726-4589-be36-c1aa746b4456" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="00eaa659-6ead-40f8-84ae-141036483338">
+        <profileInstance Id="1e8cbb02-537b-4d02-90f6-46dc2012c761" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>
