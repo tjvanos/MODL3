@@ -129,7 +129,6 @@ namespace ConsoleApplication1.Domain
             // kies een random start vakje om een kar toe te voegen.
             int nextRand = myGenerator.Next(3);
             startVakjes.ElementAt(nextRand).kar = new Kar();
-            Console.WriteLine("added random at " + nextRand);
         }
 
         public int stap()

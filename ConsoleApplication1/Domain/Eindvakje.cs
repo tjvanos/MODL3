@@ -7,6 +7,13 @@ namespace ConsoleApplication1.Domain
 {
     class Eindvakje : Vakje
     {
-       
+        public override int Move()
+        {
+
+
+
+            this.kar = null;
+            return 0;
+        }
     }
 }

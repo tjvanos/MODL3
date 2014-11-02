@@ -17,12 +17,12 @@ namespace ConsoleApplication1.Presentation
             ConsoleKey k = ConsoleKey.Escape;
             while (doorgaan)
             {
-                Console.WriteLine("Gebruik 1,2,3,4,5 om de wissels te besturen");
+                
                 input = Console.ReadKey();
                 k = input.Key;
                 if (k != ConsoleKey.D1 && k != ConsoleKey.D2 && k != ConsoleKey.D3 && k != ConsoleKey.D4 && k != ConsoleKey.D5)
                 {
-                    Console.WriteLine("Ongeldige invoer");
+                   // Console.WriteLine("Ongeldige invoer");
                 }
                 else
                 {

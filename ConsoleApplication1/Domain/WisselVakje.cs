@@ -37,7 +37,28 @@ namespace ConsoleApplication1.Domain
             
         }
 
-       
+
+        public override int Move()
+        {
+
+           
+
+            int score = 0;
+            if (typeIn)
+            {
+                if (this.kar != null)
+                {
+                    this.volgende.kar = this.kar;
+                    this.kar = null;
+                }
+            }
+             else
+            {
+                this.huidig.kar = this.kar;
+                this.kar = null;
+            }
+                return score;
+        }
 
         public void Wissel()
          {
