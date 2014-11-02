@@ -20,7 +20,6 @@ namespace ConsoleApplication1.Process
         private double timeLeft;
         private int addCartCounter = 0;
         private int BootCounter = 0;
-        private int BootCounter2 = 0;
         Boolean running;
         private Schip boot;
         private Schip boot2;
@@ -32,13 +31,14 @@ namespace ConsoleApplication1.Process
         }
         public void Go()
         {
-            String tj = Console.ReadLine();
+
             bool doorgaan = true;
             Boolean first = true;
             while (doorgaan)
             {
                 if (first)
                 {
+                    outputview.ShowGameStart();
                     boot = new Schip();
                     boot2 = new Schip();
                     first = false;
@@ -94,11 +94,6 @@ namespace ConsoleApplication1.Process
 
                 if (BootCounter == 12)
                 {
-                    boot = null;
-                    boot2 = null;
-                }
-                if (BootCounter == 17)
-                {
                     if (boot.lading == 8)
                     {
                         score = score + 10;
@@ -107,6 +102,12 @@ namespace ConsoleApplication1.Process
                     {
                         score = score + 10;
                     }
+                    boot = null;
+                    boot2 = null;
+                }
+                if (BootCounter == 17)
+                {
+
                     boot2 = new Schip();
                     boot = new Schip();
                     BootCounter = 0;
