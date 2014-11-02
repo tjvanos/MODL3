@@ -67,6 +67,10 @@ namespace ConsoleApplication1.Domain
             StartVakje vak3 = new StartVakje(vak23, "C");
             //einde route 3
 
+            
+
+
+
             RailsVakje vak24 = new RailsVakje(vak9);
 
             vak9.setVakjes(vak10,null, vak8, vak24);
@@ -74,6 +78,7 @@ namespace ConsoleApplication1.Domain
             vak16.setVakjes(vak17,null, vak15, vak23);
             vak7.setVakjes(vak8, vak15, vak6, null);
             vak5.setVakjes(vak6, null, vak4, vak14);
+
 
             startVakjes.Add(vak1);
             startVakjes.Add(vak2);
@@ -110,6 +115,7 @@ namespace ConsoleApplication1.Domain
             vakjes.Add(vak12);//21
             vakjes.Add(vak13);//22
             vakjes.Add(vak22);//22
+
             myGenerator = new Random();
             // zorgen dat deze in de volgoorde komen (achterstevoren) van welke
             // ze controleren in de while loop bij stap()
@@ -143,8 +149,10 @@ namespace ConsoleApplication1.Domain
                     if (scoreToAdd == -1)
                         return -1;
                     else
+                    {
                         score = score + scoreToAdd;
-                    scoreToAdd = 0;
+                        scoreToAdd = 0;
+                    }
                 }
             }
             return score;

@@ -17,6 +17,12 @@ namespace ConsoleApplication1.Domain
             this.volgende = volgende;
         }
 
+         public Schip boot
+         {
+             get;
+             set;
+         }
+
          public override String getWaarde()
          {
              String output = "K";
@@ -29,7 +35,14 @@ namespace ConsoleApplication1.Domain
              }
              else
              {
-                 output += "===";
+                 if(this.boot==null){
+                     output += "===";
+                 }
+                 else
+                 {
+                     output += "^==";
+                 }
+
              }
              return output;
          }

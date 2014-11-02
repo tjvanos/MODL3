@@ -10,15 +10,22 @@ namespace ConsoleApplication1.Presentation
     {
 
         // toon het bord
-        public void ShowGame(Bord myBord, double score, double timeLeft)
+        public void ShowGame(Bord myBord, double score, double timeLeft, Schip boot)
         {
             Console.WriteLine("Score : " + score + " Time till next step : "+ timeLeft);
             Console.WriteLine();
             Console.BackgroundColor = ConsoleColor.Blue;
-            Console.WriteLine("44444444444444444444444444444444444444444444444444");
-            Console.WriteLine("44444444444444444444444444444444444444444444444444");
-            Console.WriteLine("44444444444444444444444444444444444444444444444444");
-            Console.WriteLine("12345678901234567890123456789012345678901234567890");
+            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+            if(boot ==null){
+                Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+            }
+            else
+            {
+                Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~<-"+boot.lading+"->~~~~~~~~~~~~~~~~~~~");
+            }
+
 
             //1
             Console.ResetColor();
@@ -96,9 +103,9 @@ namespace ConsoleApplication1.Presentation
             Console.WriteLine("");
 
             Console.BackgroundColor = ConsoleColor.Blue;
-            Console.WriteLine("44444444444444444444444444444444444444444444444444");
-            Console.WriteLine("44444444444444444444444444444444444444444444444444");
-            Console.WriteLine("44444444444444444444444444444444444444444444444444");
+            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~<-0->~~~~~~~~~~~~~~~~~~~~~~~");
+            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
             Console.ResetColor();
             Console.WriteLine();
         }

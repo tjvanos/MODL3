@@ -15,12 +15,13 @@ namespace ConsoleApplication1.Process
         private InputView inputview;
         private OutputView outputview;
         private Bord bord;
-        private Thread addCartThread;
         private Thread makeStep;
-        private int score = 130;
+        private int score = 0;
         private double timeLeft;
         private int addCartCounter = 0;
+        private int addBootCounter = 0;
         Boolean running;
+        private Schip boot;
 
         public Controller()
         {
@@ -31,25 +32,26 @@ namespace ConsoleApplication1.Process
         {
             bool doorgaan = true;
             Boolean first = true;
-            while(doorgaan)
+            while (doorgaan)
             {
-                if(first)
+                if (first)
                 {
+                    boot = new Schip();
                     first = false;
-                    
+
                     bord = new Bord();
                     running = true;
 
                     makeStep = new Thread(MakeStep);
                     makeStep.Start();
-                    outputview.ShowGame(bord, score, timeLeft);
+                    outputview.ShowGame(bord, score, timeLeft, null);
                 }
                 HandleSwitch();
-               
-           } 
+
+            }
 
             Console.ReadLine();
-            
+
         }
 
         // Om een bepaalde tijd het spel een stap laten doen
@@ -64,9 +66,9 @@ namespace ConsoleApplication1.Process
                     Thread.Sleep(100);
                     timeLeft = (timeLeft - 100);
                     Console.Clear();
-                    outputview.ShowGame(bord, score, timeLeft);
+                    outputview.ShowGame(bord, score, timeLeft, boot);
                 }
-            
+
                 // score controleren bij elke stap
                 scoreToAdd = bord.stap();
                 if (scoreToAdd == -1)// score -1 betekend wagons gebotst
@@ -79,21 +81,22 @@ namespace ConsoleApplication1.Process
                 scoreToAdd = 0;
                 addCartCounter++;
                 if (addCartCounter == 2)
-                { 
+                {
                     bord.addRandom();
                     addCartCounter = 0;
                 }
+
             }
         }
 
-      
+
 
         //Afhandelen van de switch invoer.
         public void HandleSwitch()
         {
             int valueSwith = inputview.AskSwitch();
             bord.changeSwitch(valueSwith);
-            outputview.ShowGame(bord, score, timeLeft);
+            outputview.ShowGame(bord, score, timeLeft, null);
         }
 
         //Zorgen dat de tijd steeds korter wordt

@@ -30,6 +30,11 @@ namespace ConsoleApplication1.Domain
             // hier dus checek of volgende van het type kadevakje is met  if (this.volgende.GetType() == typeof(KadeVakje))
             // als dat zo is boten controleren, als er een boot is controleren of deze vol zit.
             // als deze vol zit boot wegdoen.
+            if (this.volgende.GetType() == typeof(KadeVakje))
+            {
+                this.kar.empty();
+                score++;
+            }
             if (this.volgende != null)
             {
                 if (this.volgende.kar != null)

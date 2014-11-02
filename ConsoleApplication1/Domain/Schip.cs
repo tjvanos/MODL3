@@ -7,5 +7,14 @@ namespace ConsoleApplication1.Domain
 {
     class Schip
     {
+        public int lading
+        {
+            get;
+            set;
+        }
+        public Schip()
+        {
+            this.lading = 0;
+        }
     }
 }
