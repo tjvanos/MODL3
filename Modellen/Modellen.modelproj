@@ -29,12 +29,12 @@
       <SubType>Content</SubType>
       <DependentUpon>GameOver.sequencediagram</DependentUpon>
     </Content>
-    <Content Include="KarLegenBoot.sequencediagram">
+    <Content Include="KarStart.sequencediagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="KarLegenBoot.sequencediagram.layout">
+    <Content Include="KarStart.sequencediagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>KarLegenBoot.sequencediagram</DependentUpon>
+      <DependentUpon>KarStart.sequencediagram</DependentUpon>
     </Content>
     <Content Include="ModelDefinition\Package1_2129.uml">
       <SubType>Content</SubType>
@@ -44,6 +44,13 @@
     </Content>
     <Content Include="ModelDefinition\Package_2129.uml">
       <SubType>Content</SubType>
+    </Content>
+    <Content Include="Move.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Move.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Move.sequencediagram</DependentUpon>
     </Content>
     <Content Include="objectDiagramField.classdiagram">
       <SubType>Content</SubType>

@@ -1,22 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="df5ce142-af99-46bc-a5d3-2556172ad3ab" name="Sequence1" linkedPackageId="a8564d2e-826e-4283-8c0e-04caa05d1acf" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="86debb3d-5983-4266-bffc-74ebba7c8364">
-      <profileInstance Id="e5b63536-3600-4b67-868f-30a5e86de285" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="f627d2c1-54fe-47c9-81ad-38463c353d97">
-      <profileInstance Id="8f94f0d0-5ab2-4806-86df-81c78f149554" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <packageHasNamedElement>
       <interaction Id="1ef992a9-55e9-4b23-bfa3-6d2e410c1f01" name="Sequence1" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
+        <ownedCommentsInternal>
+          <comment Id="02b08112-d076-4a0d-8759-9c07625917b0">
+            <elementDefinition Id="bdb7ad5b-d4e6-4d8c-be20-1533b78b8c5b" />
+            <body>Doorgeef links worden aangepast</body>
+          </comment>
+        </ownedCommentsInternal>
         <elementDefinition Id="ecef078c-d853-4ec2-98fe-0bb3a1eb9d44" />
         <fragments>
           <behaviorExecutionSpecification Id="4c504cc9-2007-4e7f-be88-776950601cb7" name="BehaviorExecutionSpecification2">
@@ -375,5 +367,19 @@
   </packagedElements>
   <package Id="a8564d2e-826e-4283-8c0e-04caa05d1acf" name="Modellen">
     <elementDefinition Id="d99d8302-6c37-43b7-b4d5-4a1dba44e50c" />
+    <profileInstances>
+      <packageHasProfileInstances Id="86debb3d-5983-4266-bffc-74ebba7c8364">
+        <profileInstance Id="e5b63536-3600-4b67-868f-30a5e86de285" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="f627d2c1-54fe-47c9-81ad-38463c353d97">
+        <profileInstance Id="8f94f0d0-5ab2-4806-86df-81c78f149554" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </SequenceDesignerModel>

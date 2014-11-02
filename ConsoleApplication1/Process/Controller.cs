@@ -55,8 +55,6 @@ namespace ConsoleApplication1.Process
 
             }
 
-            Console.ReadLine();
-
         }
 
         // Om een bepaalde tijd het spel een stap laten doen

@@ -1,19 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="e428b0e9-3508-4e18-a487-017b92e72a7c" name="AKD" linkedPackageId="e9ee5710-e638-4bad-a7e2-a1b4b043755c" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="e963425c-9f18-4183-a2e5-dc0dd3870acf">
-      <profileInstance Id="01e4f304-e0ab-4f4a-9038-8f79f736b76d" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="ce997f66-be54-42f8-b941-61f5f10b1d95">
-      <profileInstance Id="1a84f0a8-e0d4-4251-ba0e-a494f945e929" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="e428b0e9-3508-4e18-a487-017b92e72a7c" name="AKD" linkedPackageId="e9ee5710-e638-4bad-a7e2-a1b4b043755c" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="340b56bc-1545-48a9-bdd1-3360bc0ef826" name="Vakje" isAbstract="false" isLeaf="false" isActiveClass="false">
@@ -61,7 +47,7 @@
           </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
-          <operation Id="b054a491-a368-4f97-99a5-02503fbdf9fa" name="moveKar" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="b054a491-a368-4f97-99a5-02503fbdf9fa" name="move" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="bab3077a-caa8-41e6-a228-7405f2921efc" />
           </operation>
         </ownedOperationsInternal>
@@ -99,15 +85,33 @@
           </generalization>
         </generalsInternal>
         <ownedAttributesInternal>
-          <property Id="28e2dd83-b7b1-4dfc-8036-f70679522d66" name="incommingLink" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="28e2dd83-b7b1-4dfc-8036-f70679522d66" name="vorige" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="943c580d-deea-4e4b-8274-a22087d4e391" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="b8e40857-101d-4afd-b1a0-2da8a71ae576" LastKnownName="Vakje" />
+              <referencedTypeMoniker Id="68dd041f-23f8-4980-b979-90092a2c4b37" LastKnownName="Vakje" />
+            </type_NamedElement>
+          </property>
+          <property Id="a0f63234-70f1-44e6-834b-9c2b546e5ed9" name="vorige2" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ffda1bc9-1269-492a-b96d-1fa67384204c" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="ee3bc524-52fb-4b2e-8828-4b5e0d369837" LastKnownName="Vakje" />
+            </type_NamedElement>
+          </property>
+          <property Id="7a84543c-9487-41df-80c6-62f9634ddc8f" name="volgende" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="30ac0699-61da-4e14-a49a-fba8cea20a64" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="ee3bc524-52fb-4b2e-8828-4b5e0d369837" LastKnownName="Vakje" />
+            </type_NamedElement>
+          </property>
+          <property Id="fcf88a96-7936-4f7a-8542-5184840f52c7" name="volgende" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="703c7f7d-b806-440f-a0c5-f099ae761e6e" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="ee3bc524-52fb-4b2e-8828-4b5e0d369837" LastKnownName="Vakje" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
-          <operation Id="2f9ed7d1-0cb1-45a1-9499-1d967e273e9c" name="switch" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="2f9ed7d1-0cb1-45a1-9499-1d967e273e9c" name="wissel" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="e86020ef-2090-4905-9ea4-7ab1a7cd47f7" />
           </operation>
         </ownedOperationsInternal>
@@ -169,10 +173,10 @@
       <class Id="de5cdcfe-f1a2-413b-81b1-baf45176ba6d" name="Boot" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="1e8c89a1-d883-4c41-a8bc-2c0fbb707882" />
         <ownedAttributesInternal>
-          <property Id="3b2bc225-896d-4041-8f92-f273d23952be" name="load" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="3b2bc225-896d-4041-8f92-f273d23952be" name="lading" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="c183d142-d80e-4794-8868-23d1c9df8f77" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="80ef57d7-4bd6-476f-bd76-31de93350c04" LastKnownName="Integer" />
+              <referencedTypeMoniker Id="2b0c9d63-c208-46b2-a5b6-10ef8fb26e73" LastKnownName="Int" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
@@ -187,10 +191,10 @@
       <class Id="28339e61-734e-4be7-b0ff-8d1c6b41aa4d" name="Kar" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="f7d3a1aa-7ac4-426e-82c1-9027a11385f7" />
         <ownedAttributesInternal>
-          <property Id="41587a9c-df3c-4cf2-8479-17762a851243" name="load" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="41587a9c-df3c-4cf2-8479-17762a851243" name="packages" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="d1fdf6b8-8d88-4606-8b52-b3f87b1b3869" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="e07d6974-9c7b-4b7c-99ba-fcaba3ad6d70" LastKnownName="Boolean" />
+              <referencedTypeMoniker Id="96671546-ffd8-4f82-ad8f-4f51a03910dc" LastKnownName="Int" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
@@ -207,27 +211,41 @@
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <referencedType Id="80ef57d7-4bd6-476f-bd76-31de93350c04" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
-        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="e07d6974-9c7b-4b7c-99ba-fcaba3ad6d70" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
-        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
       <referencedType Id="328c644c-a77f-40f8-8c02-42e7c754f0ce" name="Boot" isAbstract="false" isLeaf="false" cachedFullName="Modellen::Boot">
         <elementDefinition Id="1e8c89a1-d883-4c41-a8bc-2c0fbb707882" />
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <referencedType Id="b8e40857-101d-4afd-b1a0-2da8a71ae576" name="Vakje" isAbstract="false" isLeaf="false" cachedFullName="Modellen::Vakje">
+      <referencedType Id="96671546-ffd8-4f82-ad8f-4f51a03910dc" name="Int" isAbstract="false" isLeaf="false" cachedFullName="Int">
+        <elementDefinition Id="73d69437-b686-4a47-8380-f2f6c48d65fd" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="68dd041f-23f8-4980-b979-90092a2c4b37" name="Vakje" isAbstract="false" isLeaf="false" cachedFullName="Modellen::Vakje">
         <elementDefinition Id="6d28dc79-89a5-4c2f-99ff-47fdcf4d03b8" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="2b0c9d63-c208-46b2-a5b6-10ef8fb26e73" name="Int" isAbstract="false" isLeaf="false" cachedFullName="Int">
+        <elementDefinition Id="73d69437-b686-4a47-8380-f2f6c48d65fd" />
       </referencedType>
     </packageHasNamedElement>
   </packagedElements>
   <package Id="e9ee5710-e638-4bad-a7e2-a1b4b043755c" name="Modellen">
     <elementDefinition Id="d99d8302-6c37-43b7-b4d5-4a1dba44e50c" />
+    <profileInstances>
+      <packageHasProfileInstances Id="e963425c-9f18-4183-a2e5-dc0dd3870acf">
+        <profileInstance Id="01e4f304-e0ab-4f4a-9038-8f79f736b76d" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="ce997f66-be54-42f8-b941-61f5f10b1d95">
+        <profileInstance Id="1a84f0a8-e0d4-4251-ba0e-a494f945e929" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>

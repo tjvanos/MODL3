@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 23.875, 10.875" name="objectDiagramField">
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 23.375, 10.875" name="objectDiagramField">
   <logicalClassDesignerModelMoniker Id="ae61c76f-1624-4150-ba95-e878c1313037" />
   <nestedChildShapes>
     <classShape Id="8a51bfa5-3ab0-47d7-87d7-ec1ff0bd77fa" absoluteBounds="0.5, 0.625, 2.125, 0.90234373509883881" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
@@ -362,7 +362,7 @@
         <classShapeMoniker Id="bbf2b1a7-3162-4990-99cd-cf5bc15556e0" />
       </nodes>
     </dependencyConnector>
-    <commentShape Id="e99ffe50-7c02-44a0-b780-e51c706dcd13" absoluteBounds="22.375, 5.5, 1.25, 0.5" customColor="251, 247, 200">
+    <commentShape Id="e99ffe50-7c02-44a0-b780-e51c706dcd13" absoluteBounds="21.75, 5.5, 1.25, 0.5" customColor="251, 247, 200">
       <commentMoniker Id="e06457b3-8bb8-4960-a4e8-f79c355d7e64" />
       <relativeChildShapes />
     </commentShape>

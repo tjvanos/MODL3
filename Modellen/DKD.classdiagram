@@ -6,20 +6,6 @@
       <body>user Starts Program</body>
     </comment>
   </ownedCommentsInternal>
-  <profileInstances>
-    <packageHasProfileInstances Id="5e44021c-3689-40c3-b353-a4d67564467b">
-      <profileInstance Id="1cd8384b-2650-44de-9056-7770104236b6" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="8214ed6b-23bd-4363-9dfe-d09ca09db83e">
-      <profileInstance Id="cb0cba25-2753-49dd-893b-39515e444d9b" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <logicalClassDesignerModelHasPackages>
       <package Id="b5e8214b-aa46-4c8c-abc5-b96ca01ff153" name="View">
@@ -138,5 +124,19 @@
   </packagedElements>
   <package Id="774730a2-1771-459f-950d-cf7307381875" name="Modellen">
     <elementDefinition Id="d99d8302-6c37-43b7-b4d5-4a1dba44e50c" />
+    <profileInstances>
+      <packageHasProfileInstances Id="5e44021c-3689-40c3-b353-a4d67564467b">
+        <profileInstance Id="1cd8384b-2650-44de-9056-7770104236b6" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="8214ed6b-23bd-4363-9dfe-d09ca09db83e">
+        <profileInstance Id="cb0cba25-2753-49dd-893b-39515e444d9b" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>
