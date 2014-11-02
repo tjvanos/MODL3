@@ -40,9 +40,8 @@ namespace ConsoleApplication1.Domain
 
         public override int Move()
         {
-
-           
-
+            if (this.volgende.kar != null)
+                return -1;
             int score = 0;
             if (typeIn)
             {

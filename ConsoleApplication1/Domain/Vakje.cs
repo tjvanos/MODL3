@@ -27,6 +27,9 @@ namespace ConsoleApplication1.Domain
         {
             int score = 0;
             // score verhogen als het volgende vakje een kadevakje is en er een boot beschikbaar is.
+            // hier dus checek of volgende van het type kadevakje is met  if (this.volgende.GetType() == typeof(KadeVakje))
+            // als dat zo is boten controleren, als er een boot is controleren of deze vol zit.
+            // als deze vol zit boot wegdoen.
             if (this.volgende != null)
             {
                 if (this.volgende.kar != null)
