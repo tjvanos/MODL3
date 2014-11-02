@@ -27,10 +27,11 @@ namespace ConsoleApplication1.Domain
         {
             int score = 0;
             // score verhogen als het volgende vakje een kadevakje is en er een boot beschikbaar is.
-            if(this.volgende != null)
+            if (this.volgende != null)
             {
-                
-                if(this.volgende.GetType() == typeof(WisselVakje))
+                if (this.volgende.kar != null)
+                    return -1;
+                if (this.volgende.GetType() == typeof(WisselVakje))
                 {
                     WisselVakje temp = (WisselVakje)this.volgende;
                     if (this == temp.getVorigVakje())

@@ -134,10 +134,18 @@ namespace ConsoleApplication1.Domain
         public int stap()
         {
             int score = 0;
+            int scoreToAdd = 0;
             for(int i = vakjes.Count() ; i > 0 ; i --)
             {
                 if(vakjes.ElementAt(i -1).kar != null)
-                    score = score + vakjes.ElementAt(i - 1).Move();
+                {
+                    scoreToAdd = vakjes.ElementAt(i - 1).Move();
+                    if (scoreToAdd == -1)
+                        return -1;
+                    else
+                        score = score + scoreToAdd;
+                    scoreToAdd = 0;
+                }
             }
             return score;
         }

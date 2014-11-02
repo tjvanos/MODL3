@@ -136,9 +136,12 @@ namespace ConsoleApplication1.Presentation
         }
 
         // toon het scherm als het spel is afgelopen
-        public void GameEnd()
+        public void GameEnd(int score)
         {
             Console.Clear();
+            Console.WriteLine("------------------Game Over----------------");
+            Console.WriteLine("");
+            Console.WriteLine("Final score " + score);
             Console.WriteLine("Waiting for input");
             Console.ReadKey();
         }
