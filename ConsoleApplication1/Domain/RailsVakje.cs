@@ -18,10 +18,7 @@ namespace ConsoleApplication1.Domain
         }
 
 
-       public override void Move()
-        {
 
-        }
         
     }
 }

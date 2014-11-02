@@ -10,8 +10,10 @@ namespace ConsoleApplication1.Presentation
     {
 
         // toon het bord
-        public void ShowGame(Bord myBord)
+        public void ShowGame(Bord myBord, double score, double timeLeft)
         {
+            Console.WriteLine("Score : " + score + " Time till next step : "+ timeLeft);
+            Console.WriteLine();
             Console.BackgroundColor = ConsoleColor.Blue;
             Console.WriteLine("44444444444444444444444444444444444444444444444444");
             Console.WriteLine("44444444444444444444444444444444444444444444444444");

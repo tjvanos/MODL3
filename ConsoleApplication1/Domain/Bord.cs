@@ -132,13 +132,15 @@ namespace ConsoleApplication1.Domain
             Console.WriteLine("added random at " + nextRand);
         }
 
-        public void stap()
+        public int stap()
         {
+            int score = 0;
             for(int i = vakjes.Count() ; i > 0 ; i --)
             {
                 if(vakjes.ElementAt(i -1).kar != null)
-                    vakjes.ElementAt(i - 1).Move();
+                    score = score + vakjes.ElementAt(i - 1).Move();
             }
+            return score;
         }
 
         public void changeSwitch(int index)

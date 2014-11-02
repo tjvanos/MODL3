@@ -23,8 +23,10 @@ namespace ConsoleApplication1.Domain
         {
 
         }
-        public virtual void Move()
+        public virtual int Move()
         {
+            int score = 0;
+            // score verhogen als het volgende vakje een kadevakje is en er een boot beschikbaar is.
             if(this.volgende != null)
             {
                 
@@ -43,6 +45,7 @@ namespace ConsoleApplication1.Domain
                     this.kar = null;
                 }
             }
+            return score;
         }
 
         public virtual String getWaarde()

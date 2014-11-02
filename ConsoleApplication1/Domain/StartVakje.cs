@@ -16,10 +16,6 @@ namespace ConsoleApplication1.Domain
             this.naam = naam;
         }
 
-        public override void Move()
-        {
-            
-            base.Move();
-        }
+        
     }
 }
