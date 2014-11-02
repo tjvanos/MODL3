@@ -26,27 +26,39 @@ namespace ConsoleApplication1.Domain
         public virtual void Move()
         {
             if(this.volgende != null)
-            { 
-                this.volgende.kar = this.kar;
-                this.kar = null;
+            {
+                
+                if(this.volgende.GetType() == typeof(WisselVakje))
+                {
+                    WisselVakje temp = (WisselVakje)this.volgende;
+                    if (this == temp.getVorigVakje())
+                    {
+                        this.volgende.kar = this.kar;
+                        this.kar = null;
+                    }
+                }
+                else
+                {
+                    this.volgende.kar = this.kar;
+                    this.kar = null;
+                }
             }
         }
 
         public virtual String getWaarde()
         {
-            String output = "=[";
+            String output = "=";
             if (this.kar != null)
             {
                 if (this.kar.hasPackage())
-                    output += "1";
+                    output += "[1]";
                 else
-                    output += "0";
+                    output += "[0]";
             }
             else
             {
-                output += "-";
+                output += " = ";
             }
-            output += "]";
             return output;
         }
 

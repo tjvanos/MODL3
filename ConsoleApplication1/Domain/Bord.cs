@@ -9,11 +9,13 @@ namespace ConsoleApplication1.Domain
     {
         List<Vakje> vakjes;
         List<StartVakje> startVakjes;
+        List<WisselVakje> wisselVakjes;
         private Random myGenerator;
         public Bord()
         {
             vakjes = new List<Vakje>();
             startVakjes = new List<StartVakje>();
+            wisselVakjes = new List<WisselVakje>();
             //maak route 1
 
             Eindvakje vak13 = new Eindvakje();
@@ -72,9 +74,16 @@ namespace ConsoleApplication1.Domain
             vak16.setVakjes(vak17,null, vak15, vak23);
             vak7.setVakjes(vak8, vak15, vak6, null);
             vak5.setVakjes(vak6, null, vak4, vak14);
+
             startVakjes.Add(vak1);
             startVakjes.Add(vak2);
             startVakjes.Add(vak3);
+
+            wisselVakjes.Add(vak5);
+            wisselVakjes.Add(vak7);
+            wisselVakjes.Add(vak16);
+            wisselVakjes.Add(vak9);
+            wisselVakjes.Add(vak18);
 
             // alle vakken in een lijst zetten
             vakjes.Add(vak1);
@@ -130,6 +139,12 @@ namespace ConsoleApplication1.Domain
                 if(vakjes.ElementAt(i -1).kar != null)
                     vakjes.ElementAt(i - 1).Move();
             }
+        }
+
+        public void changeSwitch(int index)
+        {
+
+            wisselVakjes.ElementAt(index - 1).Wissel();
         }
     }
 }

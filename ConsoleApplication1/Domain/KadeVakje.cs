@@ -16,5 +16,22 @@ namespace ConsoleApplication1.Domain
         {
             this.volgende = volgende;
         }
+
+         public override String getWaarde()
+         {
+             String output = "K";
+             if (this.kar != null)
+             {
+                 if (this.kar.hasPackage())
+                     output += "[1]";
+                 else
+                     output += "[0]";
+             }
+             else
+             {
+                 output += "===";
+             }
+             return output;
+         }
     }
 }

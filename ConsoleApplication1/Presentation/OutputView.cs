@@ -20,6 +20,7 @@ namespace ConsoleApplication1.Presentation
 
             //1
             Console.ResetColor();
+            
             Console.Write(myBord.getWaarde(12));
             Console.Write("============");
             Console.Write(myBord.getWaarde(11));

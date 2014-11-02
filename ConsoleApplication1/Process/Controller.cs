@@ -51,7 +51,7 @@ namespace ConsoleApplication1.Process
                 }
                 HandleSwitch();
                
-            }
+           } 
 
             Console.ReadLine();
             
@@ -88,6 +88,7 @@ namespace ConsoleApplication1.Process
         public void HandleSwitch()
         {
             int valueSwith = inputview.AskSwitch();
+            bord.changeSwitch(valueSwith);
             outputview.ShowGame(bord);
         }
     }

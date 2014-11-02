@@ -18,23 +18,9 @@ namespace ConsoleApplication1.Domain
         }
 
 
-        public override String getWaarde()
+       public override void Move()
         {
-            String output = "";
-            output += "=[";
-            if (this.kar != null)
-            {
-                if (this.kar.hasPackage())
-                    output += "1";
-                else
-                    output += "0";
-            }
-            else
-            {
-                output += "-";
-            }
-            output += "]";
-            return output;
+
         }
         
     }

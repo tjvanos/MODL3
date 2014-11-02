@@ -23,13 +23,13 @@ namespace ConsoleApplication1.Domain
             this.vorige2 = vorige2;
             if (volgende2 == null)
             {
-                huidig = vorige2;
+                huidig = vorige;
                 typeIn = true;
                 this.waarde = "\\";
             }
             else
             {
-                huidig = volgende2;
+                huidig = volgende;
                 typeIn = false;
                 this.waarde = "/";
             }
@@ -74,19 +74,17 @@ namespace ConsoleApplication1.Domain
             String output = "";
             if (typeIn)
                 output += this.waarde;
-            output += "[";
             if (this.kar != null)
             {
                 if (this.kar.hasPackage())
-                    output += "1";
+                    output += "[1]";
                 else
-                    output += "0";
+                    output += "[0]";
             }
             else
             {
-                output += "-";
+                output += "===";
             }
-            output += "]";
             if (! typeIn)
                 output += this.waarde;
             return output;
@@ -94,7 +92,10 @@ namespace ConsoleApplication1.Domain
 
         public Vakje getVorigVakje()
         {
-            return vorige;
+            if (typeIn)
+                return huidig;
+            else
+                return vorige;
         }
 
         public Vakje getVolgendVakje()
