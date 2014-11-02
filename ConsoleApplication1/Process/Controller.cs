@@ -101,7 +101,7 @@ namespace ConsoleApplication1.Process
                 {
                     if (boot.lading == 8)
                     {
-
+                        score = score + 10;
                     }
                     if (boot2.lading == 8)
                     {
