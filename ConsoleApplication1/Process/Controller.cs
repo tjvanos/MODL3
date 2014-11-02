@@ -17,6 +17,9 @@ namespace ConsoleApplication1.Process
         private Bord bord;
         private Thread addCartThread;
         private Thread makeStep;
+        private int score = 130;
+        private double timeLeft;
+        private int addCartCounter = 0;
         Boolean running;
 
         public Controller()
@@ -28,26 +31,18 @@ namespace ConsoleApplication1.Process
         {
             bool doorgaan = true;
             Boolean first = true;
-            Boolean second = false;
             while(doorgaan)
             {
                 if(first)
                 {
-                    outputview.ShowGameStart();
                     first = false;
-                    second = true;
-                    bord = new Bord();
-                }
-                if (second)
-                {                    
-                    running = true;
                     
+                    bord = new Bord();
+                    running = true;
+
                     makeStep = new Thread(MakeStep);
                     makeStep.Start();
-                    addCartThread = new Thread(StartAddCartTimer);
-                    addCartThread.Start();
-                    second = false;
-                    outputview.ShowGame(bord);
+                    outputview.ShowGame(bord, score, timeLeft);
                 }
                 HandleSwitch();
                
@@ -60,36 +55,55 @@ namespace ConsoleApplication1.Process
         // Om een bepaalde tijd het spel een stap laten doen
         private void MakeStep()
         {
-            while(running)
+            int scoreToAdd;
+            while (running)
             {
-                Thread.Sleep(1000);
-                bord.stap();
-                Console.Clear();
-                outputview.ShowGame(bord);
-                Console.WriteLine("refreshed");
+                timeLeft = calculateRoundTime();
+                while (timeLeft > 0)
+                {
+                    Thread.Sleep(100);
+                    timeLeft = (timeLeft - 100);
+                    Console.Clear();
+                    outputview.ShowGame(bord, score, timeLeft);
+                }
+            
+                // score controleren bij elke stap
+                scoreToAdd = bord.stap();
+                if (scoreToAdd == -1)// score -1 betekend wagons gebotst
+                {
+                    outputview.GameEnd(score);
+                    Environment.Exit(0);
+                }
+                else // score toevoegen
+                    score = score + scoreToAdd;
+                scoreToAdd = 0;
+                addCartCounter++;
+                if (addCartCounter == 2)
+                { 
+                    bord.addRandom();
+                    addCartCounter = 0;
+                }
             }
         }
 
-        // Om een bepaalde tijd een wagen toevoegen aan een random startstation
-        public void StartAddCartTimer()
-        {
-            while(running)
-            {
-                Thread.Sleep(3100);
-                bord.addRandom();
-                //Console.Clear();
-                //outputview.ShowGame(bord);
-                Console.WriteLine("Voeg een Kar toe aan het bord");
-
-            }            
-        }
+      
 
         //Afhandelen van de switch invoer.
         public void HandleSwitch()
         {
             int valueSwith = inputview.AskSwitch();
             bord.changeSwitch(valueSwith);
-            outputview.ShowGame(bord);
+            outputview.ShowGame(bord, score, timeLeft);
+        }
+
+        //Zorgen dat de tijd steeds korter wordt
+        public double calculateRoundTime()
+        {
+            double roundTime = 2000;
+            roundTime = roundTime - ((score / 20) * 100);
+            if (roundTime < 1000)
+                return 1000;
+            return roundTime;
         }
     }
 }
