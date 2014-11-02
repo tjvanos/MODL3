@@ -142,8 +142,8 @@ namespace ConsoleApplication1.Presentation
             Console.WriteLine("");
             Console.WriteLine("Final score " + score);
             Console.WriteLine("");
-            Console.WriteLine("Press any key to exit");
-            Console.ReadKey();
+            Console.WriteLine("Press  enter to exit");
+            Console.ReadLine();
         }
         
     }
