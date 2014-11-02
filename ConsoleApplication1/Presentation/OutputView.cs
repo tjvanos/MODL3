@@ -10,7 +10,7 @@ namespace ConsoleApplication1.Presentation
     {
 
         // toon het bord
-        public void ShowGame(Bord myBord, double score, double timeLeft, Schip boot)
+        public void ShowGame(Bord myBord, double score, double timeLeft, Schip boot, Schip boot2)
         {
             Console.WriteLine("Score : " + score + " Time till next step : "+ timeLeft);
             Console.WriteLine();
@@ -103,7 +103,15 @@ namespace ConsoleApplication1.Presentation
             Console.WriteLine("");
 
             Console.BackgroundColor = ConsoleColor.Blue;
-            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~<-0->~~~~~~~~~~~~~~~~~~~~~~~");
+            if (boot2 == null)
+            {
+                Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+            }
+            else
+            {
+                Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~<-" + boot2.lading + "->~~~~~~~~~~~~~~~~~~~");
+            }
+            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
             Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
             Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
             Console.ResetColor();

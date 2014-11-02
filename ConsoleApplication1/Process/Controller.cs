@@ -19,9 +19,11 @@ namespace ConsoleApplication1.Process
         private int score = 0;
         private double timeLeft;
         private int addCartCounter = 0;
-        private int addBootCounter = 0;
+        private int BootCounter = 0;
+        private int BootCounter2 = 0;
         Boolean running;
         private Schip boot;
+        private Schip boot2;
 
         public Controller()
         {
@@ -30,6 +32,7 @@ namespace ConsoleApplication1.Process
         }
         public void Go()
         {
+            String tj = Console.ReadLine();
             bool doorgaan = true;
             Boolean first = true;
             while (doorgaan)
@@ -37,6 +40,7 @@ namespace ConsoleApplication1.Process
                 if (first)
                 {
                     boot = new Schip();
+                    boot2 = new Schip();
                     first = false;
 
                     bord = new Bord();
@@ -44,7 +48,8 @@ namespace ConsoleApplication1.Process
 
                     makeStep = new Thread(MakeStep);
                     makeStep.Start();
-                    outputview.ShowGame(bord, score, timeLeft, null);
+                    outputview.ShowGame(bord, score, timeLeft, null, null);
+
                 }
                 HandleSwitch();
 
@@ -66,7 +71,7 @@ namespace ConsoleApplication1.Process
                     Thread.Sleep(100);
                     timeLeft = (timeLeft - 100);
                     Console.Clear();
-                    outputview.ShowGame(bord, score, timeLeft, boot);
+                    outputview.ShowGame(bord, score, timeLeft, boot, boot2);
                 }
 
                 // score controleren bij elke stap
@@ -77,14 +82,46 @@ namespace ConsoleApplication1.Process
                     Environment.Exit(0);
                 }
                 else // score toevoegen
-                    score = score + scoreToAdd;
-                scoreToAdd = 0;
-                addCartCounter++;
+
+                    addCartCounter++;
                 if (addCartCounter == 2)
                 {
                     bord.addRandom();
                     addCartCounter = 0;
                 }
+
+                BootCounter++;
+
+                if (BootCounter == 12)
+                {
+                    boot = null;
+                    boot2 = null;
+                }
+                if (BootCounter == 17)
+                {
+                    if (boot.lading == 8)
+                    {
+
+                    }
+                    if (boot2.lading == 8)
+                    {
+                        score = score + 10;
+                    }
+                    boot2 = new Schip();
+                    boot = new Schip();
+                    BootCounter = 0;
+                }
+
+                if (BootCounter > 0 &&
+                    BootCounter < 12)
+                {
+                    score = score + scoreToAdd;
+
+                    scoreToAdd = 0;
+                }
+
+
+
 
             }
         }
@@ -96,7 +133,7 @@ namespace ConsoleApplication1.Process
         {
             int valueSwith = inputview.AskSwitch();
             bord.changeSwitch(valueSwith);
-            outputview.ShowGame(bord, score, timeLeft, null);
+            outputview.ShowGame(bord, score, timeLeft, boot, boot2);
         }
 
         //Zorgen dat de tijd steeds korter wordt
