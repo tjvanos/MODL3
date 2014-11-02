@@ -86,30 +86,30 @@ namespace ConsoleApplication1.Domain
             wisselVakjes.Add(vak18);
 
             // alle vakken in een lijst zetten
-            vakjes.Add(vak1);
-            vakjes.Add(vak2);
-            vakjes.Add(vak3);
-            vakjes.Add(vak4);
-            vakjes.Add(vak5);
-            vakjes.Add(vak6);
-            vakjes.Add(vak7);
-            vakjes.Add(vak8);
-            vakjes.Add(vak9);
-            vakjes.Add(vak10);
-            vakjes.Add(vak11);
-            vakjes.Add(vak12);
-            vakjes.Add(vak13);
-            vakjes.Add(vak14);
-            vakjes.Add(vak15);
-            vakjes.Add(vak16);
-            vakjes.Add(vak17);
-            vakjes.Add(vak18);
-            vakjes.Add(vak19);
-            vakjes.Add(vak20);
-            vakjes.Add(vak21);
-            vakjes.Add(vak22);
-            vakjes.Add(vak23);
-            vakjes.Add(vak24);
+            vakjes.Add(vak1); //0
+            vakjes.Add(vak2);//1
+            vakjes.Add(vak3);//2
+            vakjes.Add(vak4);//3
+            vakjes.Add(vak14);//4
+            vakjes.Add(vak23);//5
+            vakjes.Add(vak5);//6
+            vakjes.Add(vak16);//7
+            vakjes.Add(vak6);//8
+            vakjes.Add(vak17);//9
+            vakjes.Add(vak7);//10
+            vakjes.Add(vak18);//11
+            vakjes.Add(vak8);//12
+            vakjes.Add(vak15);//13
+            vakjes.Add(vak24);//14
+            vakjes.Add(vak19);//15
+            vakjes.Add(vak9);//16
+            vakjes.Add(vak20);//17
+            vakjes.Add(vak10);//18
+            vakjes.Add(vak21);//19
+            vakjes.Add(vak11);//20
+            vakjes.Add(vak12);//21
+            vakjes.Add(vak13);//22
+            vakjes.Add(vak22);//22
             myGenerator = new Random();
             // zorgen dat deze in de volgoorde komen (achterstevoren) van welke
             // ze controleren in de while loop bij stap()

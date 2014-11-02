@@ -23,11 +23,11 @@ namespace ConsoleApplication1.Presentation
             //1
             Console.ResetColor();
             
-            Console.Write(myBord.getWaarde(12));
+            Console.Write(myBord.getWaarde(22));
             Console.Write("============");
-            Console.Write(myBord.getWaarde(11));
+            Console.Write(myBord.getWaarde(21));
             Console.Write("========");
-            Console.Write(myBord.getWaarde(10));
+            Console.Write(myBord.getWaarde(20));
             Console.Write("====");
             Console.WriteLine();
             //2
@@ -37,28 +37,28 @@ namespace ConsoleApplication1.Presentation
             Console.Write(myBord.getWaarde(0));
             Console.Write(myBord.getWaarde(3));
             Console.Write("            ====");
-            Console.Write(myBord.getWaarde(7));
+            Console.Write(myBord.getWaarde(12));
             Console.Write("====        ====");
             Console.WriteLine();
             //4  '    '
             Console.Write("        ");
-            Console.Write(myBord.getWaarde(4));
-            Console.Write(myBord.getWaarde(5));
             Console.Write(myBord.getWaarde(6));
+            Console.Write(myBord.getWaarde(8));
+            Console.Write(myBord.getWaarde(10));
             Console.Write("            ====    ");
-            Console.Write(myBord.getWaarde(9));
+            Console.Write(myBord.getWaarde(18));
             Console.WriteLine();
             //5
             Console.Write(myBord.getWaarde(1));
-            Console.Write(myBord.getWaarde(13));
+            Console.Write(myBord.getWaarde(4));
             Console.Write("            ====        ====    ====");
             Console.WriteLine();
 
             //6
             Console.Write("                    ");
-            Console.Write(myBord.getWaarde(14));
+            Console.Write(myBord.getWaarde(13));
             Console.Write("        ");
-            Console.Write(myBord.getWaarde(8));
+            Console.Write(myBord.getWaarde(16));
             Console.Write("====");
             Console.WriteLine("");
 
@@ -68,31 +68,30 @@ namespace ConsoleApplication1.Presentation
 
             //8
             Console.Write("                    ====        ");
-            Console.Write(myBord.getWaarde(23));
-            Console.Write("    ");
+            Console.Write(myBord.getWaarde(14));
             Console.WriteLine("");
 
             //9
             Console.Write(myBord.getWaarde(2));
             Console.Write("========");
-            Console.Write(myBord.getWaarde(22));
+            Console.Write(myBord.getWaarde(5));
             Console.Write("====");
-            Console.Write(myBord.getWaarde(15));
-            Console.Write(myBord.getWaarde(16));
-            Console.Write(myBord.getWaarde(17));
+            Console.Write(myBord.getWaarde(7));
+            Console.Write(myBord.getWaarde(9));
+            Console.Write(myBord.getWaarde(11));
             Console.WriteLine("");
 
             //10
             Console.Write("                                ");
-            Console.Write(myBord.getWaarde(18));
+            Console.Write(myBord.getWaarde(15));
             Console.WriteLine("");
 
             //10
-            Console.Write(myBord.getWaarde(21));
-            Console.Write("========");
-            Console.Write(myBord.getWaarde(20));
+            Console.Write(myBord.getWaarde(22));
             Console.Write("========");
             Console.Write(myBord.getWaarde(19));
+            Console.Write("========");
+            Console.Write(myBord.getWaarde(17));
             Console.Write("====");
             Console.WriteLine("");
 
@@ -142,7 +141,8 @@ namespace ConsoleApplication1.Presentation
             Console.WriteLine("------------------Game Over----------------");
             Console.WriteLine("");
             Console.WriteLine("Final score " + score);
-            Console.WriteLine("Waiting for input");
+            Console.WriteLine("");
+            Console.WriteLine("Press any key to exit");
             Console.ReadKey();
         }
         
