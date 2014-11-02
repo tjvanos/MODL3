@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="8f696f5e-df80-480b-ac77-4798b4ce7899" name="KarLegenBoot" linkedPackageId="34d0e646-755b-41d2-a822-b0d43951dfed" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="c929e7ed-1934-420e-b184-bb77c6a6178a">
+      <profileInstance Id="942b8411-10df-4a6e-ab91-10de16a37d19" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="1a769c7d-ca9d-4a42-90eb-5da05ebfa38c">
+      <profileInstance Id="1d75140e-5833-455a-966c-234716210bef" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <interaction Id="a82aebaa-5d35-4fa4-b9f7-f2c0e6683e5b" name="KarLegenBoot" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
+        <elementDefinition Id="b4ab70e2-5086-47d6-bc99-70cc5a9cc5d9" />
+        <lifelines>
+          <lifeline Id="eef63497-4b81-4a6b-b7fd-ca8fae19186e" name="Lifeline1" isActor="false" lifelineDisplayName="Lifeline1">
+            <elementDefinition Id="2d81f0bb-b8fb-4705-b91a-2edb31f5bcc0" />
+          </lifeline>
+          <lifeline Id="0ff5c962-6a11-4595-9bc3-73658dfdbf55" name="Lifeline2" isActor="false" lifelineDisplayName="Lifeline2">
+            <elementDefinition Id="135187f2-88eb-40da-b856-6f4341573deb" />
+          </lifeline>
+          <lifeline Id="5c54c33b-fa10-4ed4-8361-3f3ee234da7b" name="Lifeline3" isActor="false" lifelineDisplayName="Lifeline3">
+            <elementDefinition Id="6170b3f0-b6d8-4447-b082-69472a5de5e8" />
+          </lifeline>
+        </lifelines>
+      </interaction>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="34d0e646-755b-41d2-a822-b0d43951dfed" name="Modellen">
+    <elementDefinition Id="d99d8302-6c37-43b7-b4d5-4a1dba44e50c" />
+  </package>
+</SequenceDesignerModel>
